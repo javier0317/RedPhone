@@ -24,7 +24,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.NotificationCompat;
 
-import org.thoughtcrime.redphone.R;
+import com.mannywilson.mannycalls.R;
 import org.thoughtcrime.redphone.RedPhone;
 import org.thoughtcrime.redphone.contacts.PersonInfo;
 

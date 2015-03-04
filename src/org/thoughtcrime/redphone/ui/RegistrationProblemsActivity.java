@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.actionbarsherlock.app.SherlockActivity;
-import org.thoughtcrime.redphone.R;
+import com.mannywilson.mannycalls.R;
 
 public class RegistrationProblemsActivity extends Activity {
 

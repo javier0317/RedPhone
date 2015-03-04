@@ -38,7 +38,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 
-import org.thoughtcrime.redphone.R;
+import com.mannywilson.mannycalls.R;
 
 import java.util.ArrayList;
 

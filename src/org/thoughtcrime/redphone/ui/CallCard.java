@@ -24,7 +24,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.thoughtcrime.redphone.R;
+import com.mannywilson.mannycalls.R;
 import org.thoughtcrime.redphone.contacts.PersonInfo;
 
 /**

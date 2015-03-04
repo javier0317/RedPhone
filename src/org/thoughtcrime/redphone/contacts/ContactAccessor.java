@@ -25,6 +25,7 @@ import android.net.Uri;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.support.v4.content.CursorLoader;
+import com.mannywilson.mannycalls.R;
 
 import java.io.InputStream;
 
@@ -102,7 +103,7 @@ public class ContactAccessor {
     synchronized (this) {
       if (defaultContactPhoto == null)
         defaultContactPhoto =  BitmapFactory.decodeResource(context.getResources(),
-                              org.thoughtcrime.redphone.R.drawable.ic_contact_picture);
+                              R.drawable.ic_contact_picture);
     }
 
     return defaultContactPhoto;

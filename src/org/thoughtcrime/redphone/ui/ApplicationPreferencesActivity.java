@@ -24,7 +24,7 @@ import android.preference.PreferenceManager;
 import com.actionbarsherlock.app.SherlockPreferenceActivity;
 import com.actionbarsherlock.view.MenuItem;
 
-import org.thoughtcrime.redphone.R;
+import com.mannywilson.mannycalls.R;
 import org.thoughtcrime.redphone.Release;
 
 /**

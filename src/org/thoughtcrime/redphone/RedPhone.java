@@ -51,7 +51,7 @@ import org.thoughtcrime.redphone.ui.CallScreen;
 import org.thoughtcrime.redphone.util.AudioUtils;
 import org.thoughtcrime.redphone.util.PeriodicActionUtils;
 
-
+import com.mannywilson.mannycalls.R;
 import java.security.Security;
 import java.util.ArrayList;
 
@@ -187,7 +187,7 @@ public class RedPhone extends Activity {
   private void sendInstallLink(String user) {
     String message =
         String.format(getString(R.string.RedPhone_id_like_to_call_you_securely_using_redphone_you_can_install_redphone_from_the_play_store_s),
-                                "https://play.google.com/store/apps/details?id=org.thoughtcrime.redphone");
+                                "https://play.google.com/store/apps/details?id=com.mannywilson.mannycalls");
 
     ArrayList<String> messages = SmsManager.getDefault().divideMessage(message);
     SmsManager.getDefault().sendMultipartTextMessage(user, null, messages, null, null);

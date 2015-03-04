@@ -28,7 +28,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockActivity;
-import org.thoughtcrime.redphone.R;
+import com.mannywilson.mannycalls.R;
 import org.thoughtcrime.redphone.registration.RegistrationService;
 import org.thoughtcrime.redphone.registration.RegistrationService.RegistrationState;
 import org.thoughtcrime.redphone.signaling.AccountCreationException;

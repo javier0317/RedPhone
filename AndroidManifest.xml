@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="org.thoughtcrime.redphone"
+          package="com.mannywilson.mannycalls"
           android:versionCode="30"
           android:versionName="1.0.3">
 
@@ -42,7 +42,7 @@
                  android:label="@string/app_name"
                  android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
 
-        <activity android:name=".RedPhone"
+        <activity android:name="org.thoughtcrime.redphone.RedPhone"
                   android:screenOrientation="portrait"
                   android:theme="@style/Theme.Sherlock"
                   android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|fontScale"
@@ -55,7 +55,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.DialerActivity"
+        <activity android:name="org.thoughtcrime.redphone.ui.DialerActivity"
                   android:label="@string/app_name"
                   android:screenOrientation="portrait"
                   android:uiOptions="splitActionBarWhenNarrow"
@@ -68,39 +68,39 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.AboutActivity" 
+        <activity android:name="org.thoughtcrime.redphone.ui.AboutActivity"
                   android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
         
-        <activity android:name=".ui.CreateAccountActivity"
+        <activity android:name="org.thoughtcrime.redphone.ui.CreateAccountActivity"
                   android:launchMode="singleTask"                               
                   android:windowSoftInputMode="stateHidden"
                   android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-        <activity android:name=".ui.ApplicationPreferencesActivity" 
+        <activity android:name="org.thoughtcrime.redphone.ui.ApplicationPreferencesActivity"
                   android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-        <activity android:name=".ui.RedPhoneChooser" 
+        <activity android:name="org.thoughtcrime.redphone.ui.RedPhoneChooser"
                   android:theme="@android:style/Theme.Translucent.NoTitleBar" 
                   android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-        <activity android:name=".ui.CountrySelectionActivity"
+        <activity android:name="org.thoughtcrime.redphone.ui.CountrySelectionActivity"
                   android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
                   
-        <activity android:name=".ui.RegistrationProgressActivity"
+        <activity android:name="org.thoughtcrime.redphone.ui.RegistrationProgressActivity"
                   android:windowSoftInputMode="stateUnchanged"
                   android:launchMode="singleTask"
                   android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-        <activity android:name=".ui.RegistrationProblemsActivity"
+        <activity android:name="org.thoughtcrime.redphone.ui.RegistrationProblemsActivity"
                   android:theme="@style/RedPhone.Light.Dialog"
                   android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
 
-        <service android:enabled="true" android:name=".RedPhoneService"/>
-        <service android:enabled="true" android:name=".gcm.GCMRegistrationService"/>
-        <service android:enabled="true" android:name=".gcm.GCMIntentService"/>
-        <service android:enabled="true" android:name=".registration.RegistrationService"/>
+        <service android:enabled="true" android:name="org.thoughtcrime.redphone.RedPhoneService"/>
+        <service android:enabled="true" android:name="org.thoughtcrime.redphone.gcm.GCMRegistrationService"/>
+        <service android:enabled="true" android:name="org.thoughtcrime.redphone.gcm.GCMIntentService"/>
+        <service android:enabled="true" android:name="org.thoughtcrime.redphone.registration.RegistrationService"/>
 
-        <receiver android:name=".call.CallListener"
+        <receiver android:name="org.thoughtcrime.redphone.call.CallListener"
                   android:enabled="true"
                   android:exported="true">
             <intent-filter android:priority="-1">
@@ -108,15 +108,15 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".directory.DirectoryUpdateReceiver"/>
+        <receiver android:name="org.thoughtcrime.redphone.directory.DirectoryUpdateReceiver"/>
 
-        <receiver android:name=".directory.DirectoryBootReceiver">
+        <receiver android:name="org.thoughtcrime.redphone.directory.DirectoryBootReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".sms.SMSListener"
+        <receiver android:name="org.thoughtcrime.redphone.sms.SMSListener"
                   android:enabled="true"
                   android:exported="true">
             <intent-filter android:priority="2147483647">
@@ -127,7 +127,7 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".gcm.GCMBroadcastReceiver"
+        <receiver android:name="org.thoughtcrime.redphone.gcm.GCMBroadcastReceiver"
                   android:permission="com.google.android.c2dm.permission.SEND" >
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
@@ -136,7 +136,7 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".registration.RegistrationNotifier"
+        <receiver android:name="org.thoughtcrime.redphone.registration.RegistrationNotifier"
                   android:exported="false">
             <intent-filter>
                 <action android:name="org.thoughtcrime.redphone.REGISTRATION_EVENT" />

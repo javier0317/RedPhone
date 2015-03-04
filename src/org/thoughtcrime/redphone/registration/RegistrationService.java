@@ -14,7 +14,7 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 
 import org.thoughtcrime.redphone.Constants;
-import org.thoughtcrime.redphone.R;
+import com.mannywilson.mannycalls.R;
 import org.thoughtcrime.redphone.RedPhoneService;
 import org.thoughtcrime.redphone.directory.DirectoryUpdateReceiver;
 import org.thoughtcrime.redphone.directory.NumberFilter;

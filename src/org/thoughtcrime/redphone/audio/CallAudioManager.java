@@ -3,7 +3,7 @@ package org.thoughtcrime.redphone.audio;
 import android.os.Build;
 import android.util.Log;
 
-import org.thoughtcrime.redphone.R;
+import com.mannywilson.mannycalls.R;
 
 import java.io.FileDescriptor;
 import java.lang.reflect.Field;

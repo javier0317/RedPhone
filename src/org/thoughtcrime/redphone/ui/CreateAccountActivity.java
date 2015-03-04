@@ -35,7 +35,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import org.thoughtcrime.redphone.ApplicationContext;
-import org.thoughtcrime.redphone.R;
+import com.mannywilson.mannycalls.R;
 import org.thoughtcrime.redphone.util.PhoneNumberFormatter;
 import org.thoughtcrime.redphone.util.Util;
 

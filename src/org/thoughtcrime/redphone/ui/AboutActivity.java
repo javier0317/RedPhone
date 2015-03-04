@@ -25,7 +25,7 @@ import android.widget.TextView;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.MenuItem;
 
-import org.thoughtcrime.redphone.R;
+import com.mannywilson.mannycalls.R;
 
 /**
  * The RedPhone "about" dialog.

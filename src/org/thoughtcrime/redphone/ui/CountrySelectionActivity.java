@@ -3,7 +3,7 @@ package org.thoughtcrime.redphone.ui;
 import android.content.Intent;
 import android.os.Bundle;
 
-import org.thoughtcrime.redphone.R;
+import com.mannywilson.mannycalls.R;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 

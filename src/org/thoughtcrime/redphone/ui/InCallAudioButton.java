@@ -8,7 +8,7 @@ import android.widget.CompoundButton;
 import com.actionbarsherlock.internal.view.menu.MenuBuilder;
 import com.actionbarsherlock.internal.view.menu.MenuPopupHelper;
 import com.actionbarsherlock.view.MenuItem;
-import org.thoughtcrime.redphone.R;
+import com.mannywilson.mannycalls.R;
 import org.thoughtcrime.redphone.Release;
 import org.thoughtcrime.redphone.util.AudioUtils;
 
