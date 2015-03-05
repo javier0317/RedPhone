@@ -1,6 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/gradient">
 
-<android.support.v4.view.ViewPager android:id="@+id/pager"
-                                   android:layout_width="match_parent"
-                                   android:layout_height="match_parent"
-                                   xmlns:android="http://schemas.android.com/apk/res/android" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <LinearLayout
+        android:id="@+id/options_under_bar_more"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/storage_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/storage_icon" />
+
+        <Button
+            android:id="@+id/calls_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/calls_icon" />
+
+        <Button
+            android:id="@+id/sms_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sms_icon" />
+
+        <Button
+            android:id="@+id/security_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/security_icon" />
+
+        <Button
+            android:id="@+id/home_icon_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/home_icon_color" />
+    </LinearLayout>
+
+</RelativeLayout>
+

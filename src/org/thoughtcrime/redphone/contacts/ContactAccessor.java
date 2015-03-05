@@ -103,7 +103,7 @@ public class ContactAccessor {
     synchronized (this) {
       if (defaultContactPhoto == null)
         defaultContactPhoto =  BitmapFactory.decodeResource(context.getResources(),
-                              R.drawable.ic_contact_picture);
+                              R.drawable.photoicon);
     }
 
     return defaultContactPhoto;

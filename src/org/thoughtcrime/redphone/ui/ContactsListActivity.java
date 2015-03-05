@@ -102,8 +102,9 @@ public class ContactsListActivity extends SherlockListFragment
 
   @Override
   public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-    inflater.inflate(R.menu.contact_list_options_menu, menu);
-    initializeSearch((android.widget.SearchView)menu.findItem(R.id.searchItem).getActionView());
+      //    ADDED by Alex
+      //    inflater.inflate(R.menu.contact_list_options_menu, menu);
+      //    initializeSearch((android.widget.SearchView)menu.findItem(R.id.searchItem).getActionView());
   }
 
   @SuppressLint("NewApi")
